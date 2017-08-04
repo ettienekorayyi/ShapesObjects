@@ -41,13 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Pentagon.cs" />
+    <Compile Include="Classes\Messenger.cs" />
+    <Compile Include="Classes\Pentagon.cs" />
+    <Compile Include="Classes\ShapeFactory.cs" />
+    <Compile Include="Interfaces\IMessenger.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="IShapes.cs" />
-    <Compile Include="Rectangle.cs" />
-    <Compile Include="Square.cs" />
-    <Compile Include="Triangle.cs" />
+    <Compile Include="Interfaces\IShapes.cs" />
+    <Compile Include="Classes\Rectangle.cs" />
+    <Compile Include="Classes\Square.cs" />
+    <Compile Include="Classes\Triangle.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

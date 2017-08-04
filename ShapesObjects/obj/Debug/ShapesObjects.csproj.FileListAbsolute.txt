@@ -4,3 +4,9 @@ C:\Users\Stephen\Documents\GitHub\ShapesObjects\ShapesObjects\bin\Debug\ShapesOb
 C:\Users\Stephen\Documents\GitHub\ShapesObjects\ShapesObjects\bin\Debug\ShapesObjects.pdb
 C:\Users\Stephen\Documents\GitHub\ShapesObjects\ShapesObjects\obj\Debug\ShapesObjects.exe
 C:\Users\Stephen\Documents\GitHub\ShapesObjects\ShapesObjects\obj\Debug\ShapesObjects.pdb
+C:\Users\Christopher.Tan\Documents\GitHub\ShapesObjects\ShapesObjects\bin\Debug\ShapesObjects.exe.config
+C:\Users\Christopher.Tan\Documents\GitHub\ShapesObjects\ShapesObjects\obj\Debug\ShapesObjects.exe
+C:\Users\Christopher.Tan\Documents\GitHub\ShapesObjects\ShapesObjects\obj\Debug\ShapesObjects.pdb
+C:\Users\Christopher.Tan\Documents\GitHub\ShapesObjects\ShapesObjects\bin\Debug\ShapesObjects.exe
+C:\Users\Christopher.Tan\Documents\GitHub\ShapesObjects\ShapesObjects\bin\Debug\ShapesObjects.pdb
+C:\Users\Christopher.Tan\Documents\GitHub\ShapesObjects\ShapesObjects\obj\Debug\ShapesObjects.csprojResolveAssemblyReference.cache

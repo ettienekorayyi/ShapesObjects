@@ -8,7 +8,7 @@ namespace ShapesObjects
 {
     public interface IShapes
     {
-        string ShapeName { get; set; }
-        string SidesOfShape();
+        string ShapeName { get; }
+        int SidesOfShape { get; }
     }
 }
