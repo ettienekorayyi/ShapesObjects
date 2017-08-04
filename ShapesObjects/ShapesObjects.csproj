@@ -41,9 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Heptagon.cs" />
     <Compile Include="Classes\Messenger.cs" />
     <Compile Include="Classes\Pentagon.cs" />
+    <Compile Include="Classes\Plus.cs" />
     <Compile Include="Classes\ShapeFactory.cs" />
+    <Compile Include="Classes\Octagon.cs" />
+    <Compile Include="Classes\Trapezoid.cs" />
     <Compile Include="Interfaces\IMessenger.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

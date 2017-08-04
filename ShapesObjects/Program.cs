@@ -14,7 +14,8 @@ namespace ShapesObjects
             Program p = new Program();
             string selection = String.Empty;
             ShapeFactory shapeFactory = new ShapeFactory();
-            
+            List<IShapes> container = new List<IShapes>();
+            int totalSides = 0;
 
             do
             { 
@@ -22,6 +23,7 @@ namespace ShapesObjects
                 IShapes shape = shapeFactory.CreateShape(Console.ReadLine());
                 Messenger messenger = new Messenger();
 
+                container.Add(shape);
                 messenger.WriteMessage(shape);
 
                 Console.WriteLine("Do you want to do it again?(Y/N)");
@@ -29,7 +31,10 @@ namespace ShapesObjects
                 Console.Clear();
             }
             while (selection == "Y" || selection == "y");
-            
+
+            for (int item = 0; item < container.Count; item++)
+                totalSides += container[item].SidesOfShape;
+            Console.WriteLine(totalSides);
         }
     }
 }
