@@ -9,7 +9,12 @@ namespace ShapesObjects.Classes
 {
     public class Messenger : IMessenger
     {
-        public void WriteMessage(IShapes shape)
+        public void SumOfSides(int number)
+        {
+            Console.WriteLine("Total number of sides is " + number.ToString());
+        }
+
+        public void ShapeDescription(IShapes shape)
         {
             if (shape == null)
                 Console.WriteLine("Undefined Shape");

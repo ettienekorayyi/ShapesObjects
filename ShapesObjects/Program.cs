@@ -7,34 +7,40 @@ using System.Threading.Tasks;
 
 namespace ShapesObjects
 {
-    class Program
+    public class Program
     {
+        private List<IShapes> container = new List<IShapes>();
+        private Messenger messenger = new Messenger();
+        private ShapeFactory shapeFactory = new ShapeFactory();
+
         static void Main(string[] args)
         {
-            Program p = new Program();
-            string selection = String.Empty;
-            ShapeFactory shapeFactory = new ShapeFactory();
-            List<IShapes> container = new List<IShapes>();
-            int totalSides = 0;
+            Program program = new Program();
+            program.Process();
+            Console.ReadKey();
+        }
 
-            do
-            { 
-                Console.WriteLine("Enter Shape Name: ");
-                IShapes shape = shapeFactory.CreateShape(Console.ReadLine());
-                Messenger messenger = new Messenger();
+        /// <summary>
+        /// Recursion for process
+        /// </summary>
+        public void Process()
+        {
+            Console.WriteLine("Enter Shape Name: ");
 
+            IShapes shape = shapeFactory.CreateShape(Console.ReadLine());
+            if (shape != null)
                 container.Add(shape);
-                messenger.WriteMessage(shape);
 
-                Console.WriteLine("Do you want to do it again?(Y/N)");
-                selection = Console.ReadLine();
-                Console.Clear();
-            }
-            while (selection == "Y" || selection == "y");
+            messenger.ShapeDescription(shape);
+            messenger.SumOfSides(container.Sum(x => x.SidesOfShape));
 
-            for (int item = 0; item < container.Count; item++)
-                totalSides += container[item].SidesOfShape;
-            Console.WriteLine(totalSides);
+            Console.WriteLine("Do you want to do it again?(Y/N)");
+
+            if (Console.ReadLine() == "Y")
+            {
+                    Console.Clear();
+                    Process();
+            } 
         }
     }
 }

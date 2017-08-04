@@ -8,6 +8,7 @@ namespace ShapesObjects.Interfaces
 {
     public interface IMessenger
     {
-        void WriteMessage(IShapes shape);
+        void ShapeDescription(IShapes shape);
+        void SumOfSides(int number);
     }
 }

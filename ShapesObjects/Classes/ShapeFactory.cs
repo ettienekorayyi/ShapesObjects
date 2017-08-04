@@ -16,6 +16,10 @@ namespace ShapesObjects.Classes
                 case "Rectangle": return new Rectangle();
                 case "Pentagon": return new Pentagon();
                 case "Triangle": return new Triangle();
+                case "Heptagon": return new Heptagon();
+                case "Plus": return new Plus();
+                case "Octagon": return new Octagon();
+                case "Trapezoid": return new Trapezoid();
                 default: return null;
             }
         }
